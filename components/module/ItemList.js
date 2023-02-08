@@ -30,7 +30,7 @@ const ItemList = ({ form, setForm }) => {
             name="name"
             label="Product Name"
             type="text"
-            value={products.name}
+            value={item.name}
             onChange={(e) => changeHandler(e, index)}
           />
           <div>
@@ -38,14 +38,14 @@ const ItemList = ({ form, setForm }) => {
               name="price"
               label="Price"
               type="text"
-              value={products.price}
+              value={item.price}
               onChange={(e) => changeHandler(e, index)}
             />{" "}
             <FormInput
               name="qty"
               label="QTY"
               type="text"
-              value={products.qty}
+              value={item.qty}
               onChange={(e) => changeHandler(e, index)}
             />
           </div>

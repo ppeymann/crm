@@ -15,6 +15,7 @@ export default async function handler(req, res) {
       customer.email = data.email;
       customer.phone = data.phone;
       customer.address = data.address;
+      customer.postalCode = data.postalCode;
       customer.date = data.date;
       customer.products = data.products;
       customer.upadtedAt = Date.now();

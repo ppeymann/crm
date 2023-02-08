@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     const id = req.query.customerId;
     try {
       const customer = await Customers.findById(id);
-      res.status(500).json({
+      res.status(200).json({
         status: "Success",
         data: customer,
       });
